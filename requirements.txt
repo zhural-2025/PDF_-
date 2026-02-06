@@ -1,0 +1,8 @@
+# Python зависимости
+pandas>=2.0.0
+weasyprint>=60.0
+
+# ВАЖНО: WeasyPrint требует системные зависимости:
+# - Windows: GTK3 (см. INSTALL_WINDOWS.md)
+# - macOS: cairo, pango, gdk-pixbuf, libffi (через Homebrew)
+# - Linux: libcairo2, libpango, libgdk-pixbuf, libffi (через apt/yum)

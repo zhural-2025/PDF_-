@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чек {{invoice_id}}</title>
+    <style>
+        body {
+            font-family: 'DejaVu Sans', Arial, sans-serif;
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .info {
+            margin: 20px 0;
+            padding: 15px;
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+        }
+        .amount {
+            font-size: 24px;
+            color: #27ae60;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Чек № {{invoice_id}}</h1>
+    
+    <div class="info">
+        <p><strong>Дата:</strong> {{date}}</p>
+        <p><strong>Клиент:</strong> {{customer_name}}</p>
+        <p><strong>Услуга:</strong> {{description}}</p>
+        <p><strong>Адрес:</strong> {{address}}</p>
+    </div>
+    
+    <div class="amount">
+        Сумма: {{amount}} ₽
+    </div>
+</body>
+</html>
